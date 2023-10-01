@@ -11,17 +11,25 @@
 <body>
 
 
+    
+
+
+
+
+
 
 
     <div id="landingPage">
 
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="./pages/Noticias.html">Noticias</a></li>
-            <li><a href="#">NINTENDO</a></li>
-            <li><a href="#">Videojuegos</a></li>
-            <li><a href="#">Soporte</a></li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+            <a href="../Index.html"><b>Nintendo</b></a>
+            <a href="./pages/Noticias.html">Noticias</a>
+            <a href="#contact">Videojuegos</a>
+            <a href="#about">Soporte</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars">H</i>
+            </a>
+        </div>
 
         <section class="mainBanner">
             <img id="mainBanner" src="./assets/img/Games/Super Mario Bros Wonder/Super-Mario-Bros-Wonder-Banner.png"
@@ -29,6 +37,43 @@
         </section>
 
         <section class="sectionTitle">| Últimos lanzamientos</section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="NintendoNewsCard">
+        <div id="partA">
+            <img src="./assets/img/Games/Splatoon 2 Octo Expansion/Splatoon-2-Octo-Expansion-A.png"
+                alt="Splatoon 2 Octo Expansion">
+        </div>
+        <div id="partB">
+            <div class="gameDate">
+                <p>Septiembre 6, 2023</p>
+            </div>
+            <div class="gameTitle">
+                <p>Samba de Amigo: Party Central</p>
+            </div>
+            <div class="gameDescription">
+                <p>Gargoyles Remastered ya tiene fecha: Llega el 19 de octubre a PS4, Xbox One, Switch y PC</p>
+            </div>
+            <div class="gameReadmore">
+                <p>Leer Más</p>
+            </div>
+            </div>
+    </section>
+
+
+
+
+
+
 
 
         <div class="flex-container">
@@ -70,8 +115,7 @@
             </div>
             <div class="NintendoGameCard">
                 <div class="Gameimg">
-                    <img src="./assets/img/Games/Silent Hope/Silent-Hope-A.png"
-                        alt="Silent Hope">
+                    <img src="./assets/img/Games/Silent Hope/Silent-Hope-A.png" alt="Silent Hope">
                 </div>
                 <div class="gameDate">
                     <p>Lanzamiento: 3 de octubre de 2023</p>
@@ -88,8 +132,7 @@
             </div>
             <div class="NintendoGameCard">
                 <div class="Gameimg">
-                    <img src="./assets/img/Games/Sea of Stars/Sea-of-Stars-A.png"
-                        alt="Sea of Stars">
+                    <img src="./assets/img/Games/Sea of Stars/Sea-of-Stars-A.png" alt="Sea of Stars">
                 </div>
                 <div class="gameDate">
                     <p>Lanzamiento: 29 de agosto de 2023</p>
@@ -106,8 +149,7 @@
             </div>
             <div class="NintendoGameCard">
                 <div class="Gameimg">
-                    <img src="./assets/img/Games/Paper Trail/Paper-Trail-A.png"
-                        alt="Paper Tail">
+                    <img src="./assets/img/Games/Paper Trail/Paper-Trail-A.png" alt="Paper Tail">
                 </div>
                 <div class="gameDate">
                     <p>Lanzamiento: enero de 2024</p>
@@ -124,8 +166,7 @@
             </div>
             <div class="NintendoGameCard">
                 <div class="Gameimg">
-                    <img src="./assets/img/Games/Moving Out 2/Moving-Out-2-A.png"
-                        alt="Moving Out 2">
+                    <img src="./assets/img/Games/Moving Out 2/Moving-Out-2-A.png" alt="Moving Out 2">
                 </div>
                 <div class="gameDate">
                     <p>Lanzamiento: 15 de agosto de 2023</p>
@@ -140,12 +181,13 @@
                     <p>Nintendo Switch</p>
                 </div>
             </div>
-          </div>
+        </div>
         <hr>
-        <section class="viewMoreLink" id="linkBlack"><a href="./pages/Noticias.html">Ver más noticias ></a></section>
+        <section class="viewMoreLink" id="linkBlack"><a href=".#">Ver más Videojuegos ></a></section>
 
         <section class="mainBanner">
-            <img  id="sambaAmigoBanner"  src="./assets/img/Banners/Samba-de-Amigo-Party-Central-Banner.jpg" alt="Samba de Amigo Party Central">
+            <img id="sambaAmigoBanner" src="./assets/img/Banners/Samba-de-Amigo-Party-Central-Banner.jpg"
+                alt="Samba de Amigo Party Central">
         </section>
 
         <section class="secondaryBanner">
@@ -245,7 +287,8 @@
         </section>
 
         <section class="mainBanner">
-            <img id="tearsOfKingdomBanner" src="./assets/img/Banners/The-Legend-of-Zelda-Tears-of-the-Kingdom-Banner.png"
+            <img id="tearsOfKingdomBanner"
+                src="./assets/img/Banners/The-Legend-of-Zelda-Tears-of-the-Kingdom-Banner.png"
                 alt="The Legend of Zelda Tears of the Kingdom">
         </section>
 
@@ -264,7 +307,16 @@
 
 
 
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 </body>
 
