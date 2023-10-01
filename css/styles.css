@@ -242,7 +242,7 @@ footer {
     justify-content: space-evenly;
 }
 
-.flex-container > div {
+.flex-container>div {
     width: 32%;
     margin: 5px;
 
@@ -300,22 +300,21 @@ footer {
 }
 
 
-#partA {
+.partA {
     width: 40%;
 }
 
-#partA img {
+.partA img {
     width: 100%;
 }
 
-#partB {
+.partB {
     width: 60%;
     margin: auto;
     Padding-left: 20px
 }
 
-.NintendoNewsCard > .gameDate
-{
+.NintendoNewsCard>.gameDate {
     margin: 0px 10px 10px 10px;
 }
 
@@ -448,9 +447,11 @@ footer {
         margin: auto;
     }
 
+    .readMore {
+        text-decoration: underline;
+    }
 
 
-   
 
     .secondaryBanner {
         display: flex;
@@ -554,15 +555,15 @@ footer {
         margin: auto;
     }
 
-    #partA {
+    .partA {
         width: 100%;
     }
-    
-    #partA img {
+
+    .partA img {
         width: 100%;
     }
-    
-    #partB {
+
+    .partB {
         width: 100%;
         margin: auto;
         Padding-left: 20px
